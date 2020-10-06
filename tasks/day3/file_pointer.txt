@@ -1,0 +1,13 @@
+File Pointer
+
+File Pointer is a pointer to a C structure returned by fopen() library function, which is used to identifying a file, wrapping the file descriptor, buffering functionality and all other functionality needed for I/O operation.The file pointer is of type FILE.
+
+	1) It is high level interface.
+	2) Passed to fread() and fwrite() functions.
+	3) Includes buffering,error indication and EOF detection,etc.
+	4) Provides higher portability and efficiency.
+
+
+A FILE pointer is a C standard library-level construct, used to represent a file. The FILE wraps the file descriptor, and adds buffering and other features to make I/O easier.
+
+
