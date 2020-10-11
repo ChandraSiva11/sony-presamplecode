@@ -20,7 +20,7 @@ def dhcpd_last_conf_reading(path):
     while True:
         line = cnf_fd_read.readline()
         # print("lines test ->", line.find('host',0))
-        if line.find('host',0) != -1:
+        if line.find('host', 0) != -1:
             # print('Hostname found', line)
             string = line
         else:
@@ -31,8 +31,8 @@ def dhcpd_last_conf_reading(path):
                 hw_id = line2[-1].rstrip(';\n')
                 hw_id_set.add(hw_id)
                 # print('hardware line ->', hw_id_set)
-        if line.find('}',0) == 0:
-        	pass
+        if line.find('}', 0) == 0:
+            pass
             # print('Set one Set ->', string)
         if not line:
             # print('Last set of value on the Config ->',string)
@@ -41,8 +41,8 @@ def dhcpd_last_conf_reading(path):
 
 
 def read_csv(path):
-    """Read CSV File Doc string"""	
-    csv_read_fd = open(path+'fixed-ip-list.csv','r')
+    """Read CSV File Doc string"""
+    csv_read_fd = open(path+'fixed-ip-list.csv', 'r')
     csv_dict = {}
     while True:
         line = csv_read_fd.readline()
@@ -58,15 +58,15 @@ def read_csv(path):
 def new_ip_ldigit_calc(last_string):
     """Doc string for ip finding"""
     for line in last_string.split('\n'):
-    	if line.find('fixed-address') != -1:
+        if line.find('fixed-address') != -1:
             line = line.lstrip()
             line = line.split()
-            l_digit = line[1].split('.')[-1].rstrip(';')
+            l_digit = int(line[1].split('.')[-1].rstrip(';'))
             # print('IP line ->', l_digit)
-            return(int(l_digit))
+            return l_digit
 
 
-def cre_new_dhcp_cfg (l_digit, csv_dict, hw_set):
+def cre_new_dhcp_cfg(l_digit, csv_dict, hw_set):
     """Doc string for new config creation"""
     old_hw_list = list(hw_set)
     string = ''
