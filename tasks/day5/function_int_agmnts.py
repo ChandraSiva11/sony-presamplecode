@@ -3,7 +3,7 @@
 
 def function(aa_, bb_):
 	"""To Check argument values only integer"""
-	print ("Sum of the two input values : ", aa_+bb_)
+	print ("Sum of the two input values : ", aa_ + bb_)
 
 def main():
     function (aa_='siva', bb_=12)
