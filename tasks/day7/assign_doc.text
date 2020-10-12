@@ -1,0 +1,12 @@
+pause
+-----
+pause the programm for cetain period of time. usually time.sleep() function we will use to pause the program. It is usefull when we make a remote call requests. Beacause the remote machine may take more time to respond.
+
+pass
+----
+When we declare a empty function it will through the error. To avoid this error we can use this pass keyword. So it will not allow the program to terminate.
+
+#!/usr/bin/python
+-----------------
+
+'#!/usr/bin/python' it is the python interpreter path. when we run the python script the python interpreter will be selcted from that location.
