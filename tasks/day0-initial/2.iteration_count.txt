@@ -1,0 +1,59 @@
+Problem 1
+	iteration count : 6
+	output : 1 2 3 4 5 6 6
+	Reason : The initial iteration value started from 1 and end value is 7, but end value will always be -1 added.
+
+Problem 2
+	iteration count : 7
+	output : 0 1 2 3 4 5 6 6 
+	Reason : start iteration is 0, end is 7 but it will be considered as (7-1)
+
+Problem 3
+	iteration count : 8
+	output : 0 1 2 3 4 5 6 7 7
+	Reason : While condition checking <= 7
+
+Problem 4
+	iteration count : 7
+	output : 0 1 2 3 4 5 6 6
+	Reason : while condition checking <7
+
+Problem 5
+	iteration count : 0
+	output : 0
+	Reason : in range start and end vlue is same it will not go inside for condition
+
+Problem 6
+	iteration count : 8
+	output : -3 -2 -1 0 1 2 3 4 4
+	Reason : Start value is -3
+
+Problem 7
+	iteration count : 5
+	output : 0 1 2 3 4 4
+	Reason : start and end value with in the range
+
+Problem 8
+	iteration count : 5
+	output : 1 2 3 4 5 5
+	Reason : if condition will break the iteration while it reaches 5
+
+Problem 9
+	iteration count : 5
+	output : 1 3 5 7 9 9
+	Reason : Each iteration value is incremented by 2
+
+Problem 10
+	iteration count : 7
+	output : 1 2 3 4 5 9 10 10
+	Reason : When iteration reaches 5 the i value is directly incremented by 4
+
+Problem 11
+	iteration count : 25
+	output : 1 1 2 3 4 5   2 1 2 3 4 5   3 1 2 3 4 5   4 1 2 3 4 5   5 1 2 3 4 5    5 5
+	Reason : nested looping is there 
+
+Problem 12
+	iteration count : 7
+	output : 1 1 2 3 4 5    6 5
+	Reason : When j vlue become even i value is added by 2, So j value when it reached 2 and 4 i is added by 2. So finally it will reach to 6

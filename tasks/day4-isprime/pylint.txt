@@ -1,0 +1,31 @@
+What is Pylint?
+--------------
+
+Pylint is a tool that checks for errors in Python code, tries to enforce a coding standard and looks for code smells. It can also look for certain type errors, it can recommend suggestions about how particular blocks can be refactored and can offer you details about the code's complexity.
+
+Pylint will display a number of messages as it analyzes the code and it can also be used for displaying some statistics about the number of warnings and errors found in different files. The messages are classified under various categories such as errors and warnings.
+
+Last but not least, the code is given an overall mark, based on the number and severity of the warnings and errors.
+
+What Pylint is not?
+------------------
+
+What Pylint says is not to be taken as gospel and Pylint isn't smarter than you are: it may warn you about things that you have conscientiously done.
+
+Pylint tries hard to report as few false positives as possible for errors, but it may be too verbose with warnings. That's for example because it tries to detect things that may be dangerous in a context, but are not in others, or because it checks for some things that you don't care about. Generally, you shouldn't expect Pylint to be totally quiet about your code, so don't necessarily be alarmed if it gives you a hell lot of messages for your project!
+
+The best way to tackle pylint's verboseness is to:
+
+enable or disable the messages or message categories that you want to be activated or not for when pylint is analyzing your code. This can be done easily through a command line flag. For instance, disabling all convention messages is simple as a --disable=C option added to pylint command.
+create a custom configuration file, tailored to your needs. You can generate one using pylint's command 
+
+Introduction
+------------
+
+Beginner to coding standards? Pylint can be your guide to reveal what's really going on behind the scenes and help you to become a more aware programmer.
+
+Sharing code is a rewarding endeavor. Putting your code out there can be either an act of philanthropy, coming of age, or a basic extension of belief in open source. Whatever the motivation, your good intentions may not have the desired outcome if people find your code hard to use or understand. The Python community has formalized some recommended programming styles to help everyone write code in a common, agreed-upon style that makes the most sense for shared code. This style is captured in PEP 8, the "Style Guide for Python Code". Pylint can be a quick and easy way of seeing if your code has captured the essence of PEP 8 and is therefore friendly to other potential users.
+
+Perhaps you're not ready to share your code but you'd like to learn a bit more about writing better code and don't know where to start. Pylint can tell you where you may have run astray and point you in the direction to figure out what you have done and how to do better.
+
+This tutorial is all about approaching coding standards with little or no knowledge of in-depth programming or the code standards themselves. It's the equivalent of skipping the manual and jumping right in.

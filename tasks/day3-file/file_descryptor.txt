@@ -1,0 +1,12 @@
+These functions operate on I/O streams referred to using file descriptors. The file descriptor will be outside of the file.
+
+In Unix and related computer operating systems, a file descriptor is an abstract indicator used to access a file or other input/output resource, such as a pipe or network socket. File descriptors form part of the POSIX application programming interface. A file descriptor is a non-negative integer, generally represented in the C programming language as the type int (negative values being reserved to indicate "no value" or an error condition). 
+
+1) Low/Kernel level handler.
+2) passes to read() and write() of UNIX System Calls.
+3) Doesn't include buffering and such features.
+4) Less portable and lacks efficiency.
+
+
+
+POSIX stands for Portable Operating System Interface, and is an IEEE standard designed to facilitate application portability. POSIX is an attempt by a consortium of vendors to create a single standard version of UNIX. If they are successful, it will make it easier to port applications between hardware platforms.
