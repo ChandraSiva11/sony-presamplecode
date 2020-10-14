@@ -117,6 +117,7 @@ def print_fun(dictionary):
             print('\t}')
     print(']')
 
+
 def main():
     "Main function doc string"
     student_hex_data = hex_convert(student_data, 'student_name')
@@ -127,6 +128,7 @@ def main():
     print('Books hex dictionary --->\n-------------------------')
     print_fun(book_index_hex_data)
     #print(dir(json.dumps(book_index_hex_data,indent=2)))
+
 
 if __name__ == "__main__":
     main()
