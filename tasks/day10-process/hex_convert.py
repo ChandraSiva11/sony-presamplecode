@@ -109,13 +109,21 @@ def print_fun(dictionary):
             elif key == 'book_id':
                 print('\t\t"' + key + '":', str(value)+',')
             else:
-                print('\t\t', '"'+key+'"', ':', value)
+                print('\t\t', '"'+key+'"', ':', '[ %s ]' % ', '.join(map(str, value)))
         count += 1
         if count < len(dictionary):
             print('\t},')
         else:
             print('\t}')
     print(']')
+
+
+def validate_hex_convert(dec_data, hex_data, name):
+    hex_recvd_data = hex_convert(dec_data, name)
+    print('Validation -> ', hex_recvd_data)
+    for i in  range(0, len(hex_recvd_data[0]['marks'])):
+        # print('Elements ->', hex_recvd_data[0]['marks'][i], hex_data[0]['marks'][i])
+        assert hex_recvd_data[0]['marks'][i] == hex_data[0]['marks'][i], "Vlidation Failed"
 
 
 def main():
@@ -128,6 +136,11 @@ def main():
     print('Books hex dictionary --->\n-------------------------')
     print_fun(book_index_hex_data)
     #print(dir(json.dumps(book_index_hex_data,indent=2)))
+
+    sample_decimal = [{'marks' : [1, 2, 3, 10, 11, 12]}]
+    expected_op = [{'marks' : ['0x01', '0x02', '0x03', '0x0a', '0x0b', '0x0c']}]
+    validate_hex_convert(sample_decimal, expected_op, 'marks')
+
 
 
 if __name__ == "__main__":
