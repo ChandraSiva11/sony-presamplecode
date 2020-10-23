@@ -1,0 +1,15 @@
+Shallow Copy
+------------
+    A shallow copy means constructing a new collection object and then populating it with references to the child objects found in the original. In essence, a shallow copy is only one level deep. The copying process does not recurse and therefore won’t create copies of the child objects themselves.
+
+    Making Shallow Copy
+    -------------------
+    	xs = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+
+Deep copy
+---------
+    A deep copy makes the copying process recursive. It means first constructing a new collection object and then recursively populating it with copies of the child objects found in the original. Copying an object this way walks the whole object tree to create a fully independent clone of the original object and all of its children.
+
+    Making deep copy
+    ---------------
+    	ys = list(xs)  # Make a shallow copy
