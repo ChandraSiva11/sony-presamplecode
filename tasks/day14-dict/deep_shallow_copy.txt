@@ -12,4 +12,4 @@ Deep copy
 
     Making deep copy
     ---------------
-    	ys = list(xs)  # Make a shallow copy
+    	ys = list(xs)
