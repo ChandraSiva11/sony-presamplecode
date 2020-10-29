@@ -1,0 +1,58 @@
+Python Data Types
+----------------
+
+defines the type of the variable, whether it is an integer variable, string variable, tuple, dictionary, list etc. Python data types are divided in two categories, mutable data types and immutable data types.
+
+Immutable Data types in Python
+------------------------------
+1. Numeric
+2. String
+3. Tuple
+
+Mutable Data types in Python
+----------------------------
+4. List
+5. Dictionary
+6. Set
+
+
+1. Numeric Data Type in Python
+------------------------------
+	Integer 	– In Python 3, there is no upper bound on the integer number which means we can have the value as large as our system memory allows.
+	--------
+	Long 		– Long data type is deprecated in Python 3 because there is no need for it, since the integer has no upper limit, there is no point in having a data type that allows larger upper limit than integers.
+	------
+	Float 		– Values with decimal points are the float values, there is no need to specify the data type in Python. It is automatically inferred based on the value we are assigning to a variable. 
+	-------
+	Complex Number – Numbers with real and imaginary parts are known as complex numbers. Unlike other programming language such as Java, Python is able to identify these complex numbers with the values. 
+	--------------
+
+	Binary, Octal and Hexadecimal numbers
+	-------------------------------------
+	In Python we can print decimal equivalent of binary, octal and hexadecimal numbers using the prefixes.
+	0b(zero + ‘b’) and 0B(zero + ‘B’) – Binary Number
+	0o(zero + ‘o’) and 0O(zero + ‘O’) – Octal Number
+	0x(zero + ‘x’) and 0X(zero + ‘X’) – Hexadecimal Number
+
+
+2. Python Data Type – String
+----------------------------
+	String is a sequence of characters in Python. The data type of String in Python is called “str”.
+
+	Strings in Python are either enclosed with single quotes or double quotes. In the following example we have demonstrated two strings one with the double quotes and other string s2 with the single quotes.
+
+3. Python Data Type – Tuple
+---------------------------
+	Tuple is immutable data type in Python which means it cannot be changed. It is an ordered collection of elements enclosed in round brackets and separated by commas. 
+
+4. Python Data Type – List
+--------------------------
+	List is similar to tuple, it is also an ordered collection of elements, however list is a mutable data type which means it can be changed unlike tuple which is an immutable data type. A list is enclosed with square brackets and elements are separated by commas. 
+
+5. Python Data Type – Dictionary
+--------------------------------
+	Dictionary is a collection of key and value pairs. A dictionary doesn’t allow duplicate keys but the values can be duplicate. It is an ordered, indexed and mutable collection of elements.The keys in a dictionary doesn’t necessarily to be a single data type, it can be a mixed.
+
+6. Python Data Type – Set
+-------------------------
+	A set is an unordered and unindexed collection of items. This means when we print the elements of a set they will appear in the random order and we cannot access the elements of set based on indexes because it is unindexed. Elements of set are separated by commas and enclosed in curly braces.
