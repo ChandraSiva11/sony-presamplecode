@@ -21,12 +21,12 @@ async def fun2():
 		# time.sleep(1)
 
 if __name__ == "__main__":
-	loop1 = asyncio.fun1()
+	loop1 = asyncio.run(fun1())
 	task1 = loop1.create_task(fun1())
 
-	loop2 = asyncio.fun2()
-	task2 = loop1.create_task(fun2())
+	loop2 = asyncio.run(fun2())
+	task2 = loop2.create_task(fun2())
 
-	loop1.run_until_complete(asyncio.wait([task1, task2])
-	# task1.close()
-	# task2.close()
+	loop1.run_until_complete(asyncio.wait([task1, task2]))
+	task1.close()
+	task2.close()

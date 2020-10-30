@@ -1,3 +1,5 @@
+import asyncio
+
 async def print_numbers_async1(n, prefix):
     for i in range(n):
         print(prefix, i)
