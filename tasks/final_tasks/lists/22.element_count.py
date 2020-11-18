@@ -2,6 +2,7 @@
 
 def main():
 	list_ = ['aa', 'bb']
+	print(len(list_))
 
-if __name == '__main__':
+if __name__ == '__main__':
 	main()
